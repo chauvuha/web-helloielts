@@ -7,10 +7,6 @@
   pointer-events: none;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: "Poppins", Sans-serif !important
-}
 
 :root {
   --e-global-color-primary: #6EC1E4;

@@ -1,3 +1,24 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.fill-button {
+    display: inline-block;
+    background: linear-gradient(to right, var(--e-global-color-ba6f0c4) 0%, var(--e-global-color-ba6f0c4) 50%, #ffffff 50%, #ffffff 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: all .3s ease-in-out;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fill-button:hover{
+    background-position:0 0;
+    color: white !important;
+    transform: scale(1.1);
+}
+
 #banner {
     background-color: var(--e-global-color-6de1a1e);
     background-image: url(http://holaduhoc.edu.vn/wp-content/uploads/2022/04/Ielts-simon-banner-y.jpg);
@@ -28,26 +49,27 @@
 
 .banner-title-first {
     font-size: 32px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    line-height: 48px;
-
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'Questrial', sans-serif;
 }
 
 .banner-container .banner-text-second {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font-size: 25px;
+    font-weight: 600;
+    font-family: 'Questrial', sans-serif;
 }
 
 .red-highlight {
     background-color: var(--e-global-color-ba6f0c4);
     padding: 10px;
+    font-family: 'Questrial', sans-serif;
 }
 
 #banner button {
     width: 200px;
     justify-content: center;
-    -webkit-box-align: center;
     align-items: center;
     display: inline-flex;
     font-weight: bold;
@@ -59,6 +81,11 @@
     border-color: var(--e-global-color-ba6f0c4);
     border-radius: 0px 0px 0px 0px;
     padding: 15px 20px 15px 24px;
+    transition: all .2s ease-in-out;
+}
+
+#banner button:hover {
+    transform: scale(1.1);
 }
 
 .bi-arrow-down {
@@ -67,6 +94,13 @@
 
 #navbar {
     padding: 25px 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#navbar .navbar .container .nav-item.dropdown a,
+#navbar .navbar .container .dropdown-menu.show a {
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .navbar-nav {
@@ -75,13 +109,31 @@
 
 #navbar .nav-item {
     width: calc(100%/6);
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+}
+
+#navbar .nav-item.dropdown .dropdown-menu {
+    border: none;
+}
+
+#navbar .nav-item.dropdown:hover .dropdown-menu {
+    transition: all .2s ease-in-out;
+    background-color: var(--e-global-color-e69d51d);
+    margin: 0px;
+    border-radius: 0px;
+    border: none;
+    width: 10rem;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 #navbar .navbar-nav .nav-item #collasible-nav-dropdown {
     color: var(--e-global-color-ba6f0c4);
     font-weight: 700px !important;
     padding-top: 13px;
-    padding-bottom: 13px;
+    padding-bottom: 13px ;   
 }
 
 #navbar .navbar-nav .nav-item #collasible-nav-dropdown:hover {
@@ -168,6 +220,10 @@
     align-items: flex-start !important;
     color: white;
     font-size: 18px;
+}
+
+.course-item .course-item-content .bi {
+    margin-right: 10px;
 }
 
 #ielts-courses #seemore-course-button {
@@ -268,9 +324,10 @@
 }
 
 .why-us-overlay {
+    margin-left: 20px;
     font-size: 18px;
     text-align: left;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .why-us-overlay ul {
@@ -279,6 +336,15 @@
 
 .why-us-overlay li {
     margin-bottom: 5px;
+}
+
+.why-us-overlay .bi {
+    margin-right: 15px;
+}
+
+.why-us-overlay .elementor-icon-list-items {
+    padding-left: 0px;
+    padding-top: 20px;
 }
 
 #new-ielts-test {
@@ -290,7 +356,7 @@
     color: var(--e-global-color-44c7a33);
     font-size: 28px;
     font-weight: 600;
-    line-height: 1.2em;
+    line-height: 1.2rem;
     padding-bottom: 25px;
     margin-bottom: 20px;
 }
@@ -350,13 +416,19 @@
     background-color: var(--e-global-color-ba6f0c4)
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (min-width: 1000px) {
+    #navbar .nav-item.dropdown:hover .dropdown-menu {
+        display:block;
+    }
+}
 
-    .homepage #ielts-courses {
+
+@media only screen and (max-width: 786px) {
+    .homepage #ielts-courses,
+    .banner-text-container  {
         padding-left: 10px;
         padding-right: 10px;
     }
-
 
     .course-container-content {
         flex-direction: column;
@@ -379,11 +451,11 @@
         flex-direction: column;
     }
 
+    .homepage #ielts-courses,
     .why-us-content,
     #feedback,
     #new-ielts-test,
-    #about-hello-ielts,
-    #navbar {
+    #about-hello-ielts {
         padding: 10px;
     }
 
@@ -391,9 +463,9 @@
         padding: 0px;
     }
 
-    .banner-text-container {
-        padding-left: 10px;
-        padding-right: 10px;
+    #navbar,
+    #navbar .container {
+        padding: 0px;
     }
 
     .fs-title-section-20 {
@@ -418,7 +490,7 @@
         font-size: 15px;
     }
 
-    #banner button.button-banner {
+    #banner button.fill-button {
         padding: 10px;
     }
 
@@ -438,5 +510,39 @@
         box-shadow: none;
     }
 
+    #navbar .nav-item.dropdown:hover .dropdown-menu,
+    #navbar .nav-item.dropdown .dropdown-menu {
+        width: 100%;
+        margin: 0px;
+        padding-left: 0px;
+        padding-top: 0px;
+        border: none;
+        font-size: 12px;
+    }
 
+    #navbar .nav-item {
+        width: 100%;
+        font-size: 12px;
+        font-family: 'Quicksand', sans-serif !important;
+        text-align: left;    
+    }
+
+    #navbar .navbar-toggler.collapsed,
+    #navbar .navbar-toggler {
+        margin-right: 10px;
+    }
+
+    #navbar .navbar-nav .nav-item #collasible-nav-dropdown,
+    #navbar .navbar-nav .nav-item #collasible-nav-dropdown:hover {
+        padding: 10px 20px;
+    }
+
+    #navbar .navbar-nav .dropdown-item:hover {
+        background-color:  var(--e-global-color-ba6f0c4);
+        color: white;
+    }
+
+    .why-us-overlay {
+        margin-left: 0px;
+    }
 }

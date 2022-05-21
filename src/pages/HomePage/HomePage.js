@@ -1,6 +1,17 @@
 import "./HomePage.css"
-import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import { Container, Navbar, Nav, NavDropdown, Fade } from 'react-bootstrap'
+import { useState } from 'react'
+
 export default function HomePage() {
+    const [hover, setHover] = useState(false);
+    const changeSizeNavbar = () => {
+        if (window.innerWidth > 500) {
+            setHover(true)
+        }
+    }
+
+    const [open, setOpen] = useState(false);
+
     return (
         <div className="homepage">
             <section id="banner">
@@ -12,9 +23,8 @@ export default function HomePage() {
                         <div className="banner-text-second fs-title-section-25-left">
                             (Là bạn đấy.)
                         </div>
-                        <button className="button-banner">Tìm hiểu ngay  
-                        <i class="bi bi-arrow-down"></i>
-
+                        <button className=" btn">Tìm hiểu ngay
+                            <i class="bi bi-arrow-down"></i>
                         </button>
                     </div>
 
@@ -25,34 +35,39 @@ export default function HomePage() {
                     <Container>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="">
-                                <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                            <Nav className="fs-title-section-12">
+                                <NavDropdown title="About Hello IELTS" id="collasible-nav-dropdown">
                                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                                <NavDropdown title="IELTS Exam Information" id="collasible-nav-dropdown" >
                                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                                <NavDropdown title="IELTS Prep" id="collasible-nav-dropdown"
+                                // renderMenuOnMount={changeSizeNavbar}
+                                >
                                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown title="Dropdown" classsName="sm" id="collasible-nav-dropdown">
-                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                <NavDropdown title="Chữa bài thi mẫu" id="collasible-nav-dropdown"
+                                // renderMenuOnMount={changeSizeNavbar}
+                                >                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                <NavDropdown title="IELTS Tips" id="collasible-nav-dropdown"
+                                // renderMenuOnMount={changeSizeNavbar}
+                                >                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                <NavDropdown title="Your courses" id="collasible-nav-dropdown"
+                                // renderMenuOnMount={changeSizeNavbar}
+                                >                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 </NavDropdown>
@@ -70,11 +85,11 @@ export default function HomePage() {
                     <div className="course-item" style={{ backgroundImage: `url(${"http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-george-pak-7972316-min_1440x960.jpg"})` }}>
                         <div className="course-overlay">
                             <div className="course-item-content">
-                                <div className="">19/04/2022</div>
-                                <div className="">19/04/2022</div>
-                                <div className="">19/04/2022</div>
-                                <div className="">19/04/2022</div>
-                                <div className="">19/04/2022</div>
+                                <div className=""><i class="bi bi-calendar"></i>19/04/2022</div>
+                                <div className=""><i class="bi bi-clock-fill"></i>8:00 - 10:00 (GMT+7)</div>
+                                <div className=""><i class="bi bi-person-fill"></i>248 học sinh</div>
+                                <div className=""><i class="bi bi-chat"></i>Tiếng Anh</div>
+                                <div className=""><i class="bi bi-cash-coin"></i>1.000 đ</div>
                             </div>
                             <div className="course-item-title fs-title-section-25-left">Khoá học số 1</div>
                         </div>
@@ -82,11 +97,11 @@ export default function HomePage() {
                     <div className="course-item" style={{ backgroundImage: `url(${"http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-george-pak-7972316-min_1440x960.jpg"})` }}>
                         <div className="course-overlay">
                             <div className="course-item-content">
-                                <div className="">19/04/2022</div>
-                                <div className="">19/04/2022</div>
-                                <div className="">19/04/2022</div>
-                                <div className="">19/04/2022</div>
-                                <div className="">19/04/2022</div>
+                                <div className=""><i class="bi bi-calendar"></i>19/04/2022</div>
+                                <div className=""><i class="bi bi-clock-fill"></i>8:00 - 10:00 (GMT+7)</div>
+                                <div className=""><i class="bi bi-person-fill"></i>248 học sinh</div>
+                                <div className=""><i class="bi bi-chat"></i>Tiếng Anh</div>
+                                <div className=""><i class="bi bi-cash-coin"></i>1.000 đ</div>
                             </div>
                             <div className="course-item-title fs-title-section-25-left">Khoá học số 1</div>
                         </div>
@@ -94,18 +109,18 @@ export default function HomePage() {
                     <div className="course-item" style={{ backgroundImage: `url(${"http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-george-pak-7972316-min_1440x960.jpg"})` }}>
                         <div className="course-overlay">
                             <div className="course-item-content">
-                                <div className="">19/04/2022</div>
-                                <div className="">8:00 - 10:00 (GMT+7)</div>
-                                <div className="">248 học sinh</div>
-                                <div className="">Tiếng Anh</div>
-                                <div className="">1.000 đ</div>
+                                <div className=""><i class="bi bi-calendar"></i>19/04/2022</div>
+                                <div className=""><i class="bi bi-clock-fill"></i>8:00 - 10:00 (GMT+7)</div>
+                                <div className=""><i class="bi bi-person-fill"></i>248 học sinh</div>
+                                <div className=""><i class="bi bi-chat"></i>Tiếng Anh</div>
+                                <div className=""><i class="bi bi-cash-coin"></i>1.000 đ</div>
                             </div>
                             <div className="course-item-title fs-title-section-25-left">Khoá học số 1</div>
                         </div>
                     </div>
 
                 </div>
-                <button id="seemore-course-button">Xem thêm </button>
+                <button id="seemore-course-button" className="button fill-button"> Xem thêm </button>
             </section>
             <section id="about-hello-ielts">
                 <div className="hello-ielts-container d-flex">
@@ -115,7 +130,7 @@ export default function HomePage() {
                             <div class="elementor-icon-box-wrapper ">
                                 <div class="elementor-icon-box-icon">
                                     <span class="elementor-icon elementor-animation-">
-                                        <i class="bi bi-folder-fill"></i>                                    </span>
+                                        <i class="bi bi-folder-fill"></i>   </span>
                                 </div>
                                 <div class="elementor-icon-box-content fs-text-section-15">
                                     <h3 class="elementor-icon-box-title">
@@ -178,27 +193,27 @@ export default function HomePage() {
                             <li class="elementor-icon-list-item">
                                 <span class="elementor-icon-list-icon">
                                     <i aria-hidden="true" class="fas fa-book"></i>						</span>
-                                <span class="elementor-icon-list-text">Ngân hàng đề thi liên tục cập nhật</span>
+                                <span class="elementor-icon-list-text"><i class="bi bi-book-fill"></i>Ngân hàng đề thi liên tục cập nhật</span>
                             </li>
                             <li class="elementor-icon-list-item">
                                 <span class="elementor-icon-list-icon">
                                     <i aria-hidden="true" class="fas fa-clock"></i>						</span>
-                                <span class="elementor-icon-list-text">Hỗ trợ 24/7 bởi các chuyên gia IELTS</span>
+                                <span class="elementor-icon-list-text"><i class="bi bi-clock-fill"></i>Hỗ trợ 24/7 bởi các chuyên gia IELTS</span>
                             </li>
                             <li class="elementor-icon-list-item">
                                 <span class="elementor-icon-list-icon">
                                     <i aria-hidden="true" class="far fa-user"></i>						</span>
-                                <span class="elementor-icon-list-text">Cộng đồng năng động gồm nhiều học sinh thuộc mọi lứa tuổi</span>
+                                <span class="elementor-icon-list-text"><i class="bi bi-person-fill"></i>Cộng đồng năng động gồm nhiều học sinh thuộc mọi lứa tuổi</span>
                             </li>
                             <li class="elementor-icon-list-item">
                                 <span class="elementor-icon-list-icon">
                                     <i aria-hidden="true" class="far fa-comment"></i>						</span>
-                                <span class="elementor-icon-list-text">Giải thích chi tiết sau khi làm mỗi đề</span>
+                                <span class="elementor-icon-list-text"><i class="bi bi-chat"></i>Giải thích chi tiết sau khi làm mỗi đề</span>
                             </li>
                             <li class="elementor-icon-list-item">
                                 <span class="elementor-icon-list-icon">
                                     <i aria-hidden="true" class="fas fa-bed"></i>						</span>
-                                <span class="elementor-icon-list-text">Lộ trình nâng band điểm dễ dàng cho người lười</span>
+                                <span class="elementor-icon-list-text"><i class="bi bi-clock-fill"></i>Lộ trình nâng band điểm dễ dàng cho người lười</span>
                             </li>
                         </ul>
                     </div>

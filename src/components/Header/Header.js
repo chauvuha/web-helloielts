@@ -29,7 +29,7 @@ export default function Header() {
                             <div class="header-element header-element-button">
                                 <div class="header-widget-container">
                                     <div class="header-button-wrapper">
-                                        <a href="#" class="header-button-link header-button" role="button">
+                                        <a href="#" id="header-button" class="fill-button header-button-link header-button" role="button">
                                             <span class="header-button-content-wrapper">
                                                 <span class="header-button-text">Đăng nhập</span>
                                             </span>
@@ -40,7 +40,7 @@ export default function Header() {
                             <div class="header-element header-element-button">
                                 <div class="header-widget-container">
                                     <div class="header-button-wrapper">
-                                        <a href="#" class="header-button-link header-button" role="button">
+                                        <a href="#" id="header-button" class="fill-button header-button-link header-button" role="button">
                                             <span class="header-button-content-wrapper">
                                                 <span class="header-button-text">Đăng ký</span>
                                             </span>
