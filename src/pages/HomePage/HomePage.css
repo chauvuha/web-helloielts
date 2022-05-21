@@ -94,7 +94,6 @@
 
 #navbar {
     padding: 25px 50px;
-    font-family: 'Quicksand', sans-serif;
 }
 
 #navbar .navbar .container .nav-item.dropdown a,
@@ -231,7 +230,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins", Sans-serif;
     font-weight: bold;
     fill: var(--e-global-color-ba6f0c4);
     color: var(--e-global-color-ba6f0c4);
@@ -253,9 +251,6 @@
     border-color: var(--e-global-color-ba6f0c4);
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     margin: 0px 0px 0px 0px;
-    --e-column-margin-right: 0px;
-    --e-column-margin-left: 0px;
-    /* padding: 20px; */
     align-items: center;
     justify-content: space-between;
 }
@@ -294,7 +289,6 @@
 
 .about-hello-ielts-content .elementor-icon-box-icon {
     margin-bottom: 15px;
-
 }
 
 .about-hello-ielts-content .elementor-icon-box-title {
@@ -351,14 +345,19 @@
     padding: 50px
 }
 
-.new-ielts-test-title {
-    text-align: left;
-    color: var(--e-global-color-44c7a33);
+.new-ielts-test-title,
+.new-ielts-test-box-title,
+.feedback-title {
     font-size: 28px;
     font-weight: 600;
     line-height: 1.2rem;
     padding-bottom: 25px;
     margin-bottom: 20px;
+}
+
+.new-ielts-test-title,
+.new-ielts-test-box-title {
+    color: var(--e-global-color-44c7a33);
 }
 
 .new-ielts-test-box {
@@ -373,13 +372,9 @@
     margin-bottom: 20px;
 }
 
-.new-ielts-test-box-title {
-    color: var(--e-global-color-44c7a33);
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.2em;
-    padding-bottom: 25px;
-    margin-bottom: 20px;
+.new-ielts-test-title,
+.feedback-title {
+    text-align: left;
 }
 
 #feedback {
@@ -388,14 +383,6 @@
     color: white;
 }
 
-.feedback-title {
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 1.2em;
-    text-align: left;
-    padding-bottom: 25px;
-    margin-bottom: 20px;
-}
 
 .feedback-box {
     text-align: left;
@@ -418,7 +405,7 @@
 
 @media only screen and (min-width: 1000px) {
     #navbar .nav-item.dropdown:hover .dropdown-menu {
-        display:block;
+        display:block !important;
     }
 }
 
@@ -426,8 +413,7 @@
 @media only screen and (max-width: 786px) {
     .homepage #ielts-courses,
     .banner-text-container  {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0px 10px 0px 10px;
     }
 
     .course-container-content {
@@ -439,8 +425,7 @@
     .course-item,
     .new-ielts-test-box {
         width: 100%;
-        margin: 0px;
-        margin-bottom: 10px;
+        margin: 0px 0px 10px 0px;
     }
 
     .hello-ielts-container,
