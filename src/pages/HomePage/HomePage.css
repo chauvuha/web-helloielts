@@ -3,22 +3,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-.fill-button {
-    display: inline-block;
-    background: linear-gradient(to right, var(--e-global-color-ba6f0c4) 0%, var(--e-global-color-ba6f0c4) 50%, #ffffff 50%, #ffffff 100%);
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    transition: all .3s ease-in-out;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.fill-button:hover{
-    background-position:0 0;
-    color: white !important;
-    transform: scale(1.1);
-}
-
 #banner {
     background-color: var(--e-global-color-6de1a1e);
     background-image: url(http://holaduhoc.edu.vn/wp-content/uploads/2022/04/Ielts-simon-banner-y.jpg);
@@ -115,17 +99,26 @@
 
 #navbar .nav-item.dropdown .dropdown-menu {
     border: none;
+    padding: 0px;
+    margin: 0px
 }
 
 #navbar .nav-item.dropdown:hover .dropdown-menu {
     transition: all .2s ease-in-out;
     background-color: var(--e-global-color-e69d51d);
-    margin: 0px;
     border-radius: 0px;
-    border: none;
     width: 10rem;
     font-size: 16px;
     font-weight: 700;
+}
+
+#navbar .navbar-nav .dropdown-item {
+    font-weight: 700;
+}
+
+#navbar .navbar-nav .dropdown-item:hover {
+    background-color:  var(--e-global-color-ba6f0c4);
+    color: white;
 }
 
 #navbar .navbar-nav .nav-item #collasible-nav-dropdown {
@@ -138,9 +131,6 @@
 #navbar .navbar-nav .nav-item #collasible-nav-dropdown:hover {
     color: var(--e-global-color-6de1a1e);
     background-color: var(--e-global-color-ba6f0c4);
-    font-weight: 700px !important;
-    padding-top: 13px;
-    padding-bottom: 13px;
 }
 
 #navbar .nav-item .dropdown-toggle::after {
@@ -502,10 +492,8 @@
     #navbar .nav-item.dropdown:hover .dropdown-menu,
     #navbar .nav-item.dropdown .dropdown-menu {
         width: 100%;
-        margin: 0px;
         padding-left: 0px;
         padding-top: 0px;
-        border: none;
         font-size: 12px;
     }
 
@@ -526,9 +514,8 @@
         padding: 10px 20px;
     }
 
-    #navbar .navbar-nav .dropdown-item:hover {
-        background-color:  var(--e-global-color-ba6f0c4);
-        color: white;
+    #navbar .navbar-nav .dropdown-item {
+        padding-left: 26px;
     }
 
     .why-us-overlay {

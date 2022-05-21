@@ -7,6 +7,22 @@
   pointer-events: none;
 }
 
+.fill-button {
+  display: inline-block;
+  background: linear-gradient(to right, var(--e-global-color-ba6f0c4) 0%, var(--e-global-color-ba6f0c4) 50%, #ffffff 50%, #ffffff 100%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: all .3s ease-in-out;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.fill-button:hover{
+  background-position:0 0;
+  color: white !important;
+  transform: scale(1.1);
+}
+
 
 :root {
   --e-global-color-primary: #6EC1E4;

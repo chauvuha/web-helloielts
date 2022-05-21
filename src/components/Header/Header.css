@@ -1,5 +1,5 @@
 .header {
-    background-color: white !important;
+    background-color: white;
 }
 
 .logo.header-section-boxed,
@@ -88,10 +88,6 @@
 
 
 @media (max-width: 1023px) {
-    .header {
-        background-color: white !important;
-    }
-
     .button .header-section {
         padding: 10px 10px 10px 10px;
     }

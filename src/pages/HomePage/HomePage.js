@@ -30,30 +30,30 @@ export default function HomePage() {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="fs-title-section-12">
-                                <NavDropdown title="About Hello IELTS" id="collasible-nav-dropdown">
+                                <NavDropdown title="About Hello IELTS" id="collasible-nav-dropdown" renderMenuOnMount={true}>
                                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown title="IELTS Exam Information" id="collasible-nav-dropdown" >
+                                <NavDropdown title="IELTS Exam Information" id="collasible-nav-dropdown" renderMenuOnMount={true}>
                                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown title="IELTS Prep" id="collasible-nav-dropdown">
+                                <NavDropdown title="IELTS Prep" id="collasible-nav-dropdown" renderMenuOnMount={true}>
                                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown title="Chữa bài thi mẫu" id="collasible-nav-dropdown">                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                <NavDropdown title="Chữa bài thi mẫu" id="collasible-nav-dropdown" renderMenuOnMount={true}>                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown title="IELTS Tips" id="collasible-nav-dropdown" >                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                <NavDropdown title="IELTS Tips" id="collasible-nav-dropdown" renderMenuOnMount={true}>                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown title="Your courses" id="collasible-nav-dropdown">                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                <NavDropdown title="Your courses" id="collasible-nav-dropdown" renderMenuOnMount={true}>                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 </NavDropdown>
@@ -80,7 +80,7 @@ export default function HomePage() {
                             <div className="course-item-title fs-title-section-25-left">Khoá học số 1</div>
                         </div>
                     </div>
-                    <div className="course-item" style={{ backgroundImage: `url(${"http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-george-pak-7972316-min_1440x960.jpg"})` }}>
+                    <div className="course-item" style={{ backgroundImage: `url(${"http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-george-dolgikh-giftpunditscom-1326947-min_2540x1693.jpg"})` }}>
                         <div className="course-overlay">
                             <div className="course-item-content">
                                 <div className=""><i className="bi bi-calendar"></i>19/04/2022</div>
@@ -92,7 +92,7 @@ export default function HomePage() {
                             <div className="course-item-title fs-title-section-25-left">Khoá học số 1</div>
                         </div>
                     </div>
-                    <div className="course-item" style={{ backgroundImage: `url(${"http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-george-pak-7972316-min_1440x960.jpg"})` }}>
+                    <div className="course-item" style={{ backgroundImage: `url(${"http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-andrea-piacquadio-3807755-min_1440x960.jpg"})` }}>
                         <div className="course-overlay">
                             <div className="course-item-content">
                                 <div className=""><i className="bi bi-calendar"></i>19/04/2022</div>
@@ -188,27 +188,32 @@ export default function HomePage() {
                         <ul className="elementor-icon-list-items">
                             <li className="elementor-icon-list-item">
                                 <span className="elementor-icon-list-icon">
-                                    <i aria-hidden="true" className="fas fa-book"></i>						</span>
+                                    <i aria-hidden="true" className="fas fa-book"></i>						
+                                    </span>
                                 <span className="elementor-icon-list-text"><i className="bi bi-book-fill"></i>Ngân hàng đề thi liên tục cập nhật</span>
                             </li>
                             <li className="elementor-icon-list-item">
                                 <span className="elementor-icon-list-icon">
-                                    <i aria-hidden="true" className="fas fa-clock"></i>						</span>
+                                    <i aria-hidden="true" className="fas fa-clock"></i>						
+                                    </span>
                                 <span className="elementor-icon-list-text"><i className="bi bi-clock-fill"></i>Hỗ trợ 24/7 bởi các chuyên gia IELTS</span>
                             </li>
                             <li className="elementor-icon-list-item">
                                 <span className="elementor-icon-list-icon">
-                                    <i aria-hidden="true" className="far fa-user"></i>						</span>
+                                    <i aria-hidden="true" className="far fa-user"></i>						
+                                    </span>
                                 <span className="elementor-icon-list-text"><i className="bi bi-person-fill"></i>Cộng đồng năng động gồm nhiều học sinh thuộc mọi lứa tuổi</span>
                             </li>
                             <li className="elementor-icon-list-item">
                                 <span className="elementor-icon-list-icon">
-                                    <i aria-hidden="true" className="far fa-comment"></i>						</span>
+                                    <i aria-hidden="true" className="far fa-comment"></i>						
+                                    </span>
                                 <span className="elementor-icon-list-text"><i className="bi bi-chat"></i>Giải thích chi tiết sau khi làm mỗi đề</span>
                             </li>
                             <li className="elementor-icon-list-item">
                                 <span className="elementor-icon-list-icon">
-                                    <i aria-hidden="true" className="fas fa-bed"></i>						</span>
+                                    <i aria-hidden="true" className="fas fa-bed"></i>						
+                                    </span>
                                 <span className="elementor-icon-list-text"><i className="bi bi-clock-fill"></i>Lộ trình nâng band điểm dễ dàng cho người lười</span>
                             </li>
                         </ul>
@@ -225,23 +230,23 @@ export default function HomePage() {
                         <div className="new-ielts-test-box-title">IELTS Mock Test 04/2022</div>
                     </div>
                     <div className="new-ielts-test-box">
-                        <img alt="new-ielts-test-pic" src="http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-george-dolgikh-giftpunditscom-1326947-min_2540x1693-1536x1024.jpg" />
+                        <img alt="new-ielts-test-pic" src="http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-andrea-piacquadio-3807755-min_1440x960.jpg" />
                         <div className="new-ielts-test-box-title">IELTS Mock Test 04/2022</div>
                     </div>
                     <div className="new-ielts-test-box">
-                        <img alt="new-ielts-test-pic" src="http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-george-dolgikh-giftpunditscom-1326947-min_2540x1693-1536x1024.jpg" />
+                        <img alt="new-ielts-test-pic" src="http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-george-pak-7972316-min_1440x960.jpg" />
                         <div className="new-ielts-test-box-title">IELTS Mock Test 04/2022</div>
                     </div>
                     <div className="new-ielts-test-box">
-                        <img alt="new-ielts-test-pic" src="http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-george-dolgikh-giftpunditscom-1326947-min_2540x1693-1536x1024.jpg" />
+                        <img alt="new-ielts-test-pic" src="http://holaduhoc.edu.vn/wp-content/uploads/2022/02/vanderbilt_zoom-9-768x432.jpg" />
                         <div className="new-ielts-test-box-title">IELTS Mock Test 04/2022</div>
                     </div>
                     <div className="new-ielts-test-box">
-                        <img alt="new-ielts-test-pic" src="http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-george-dolgikh-giftpunditscom-1326947-min_2540x1693-1536x1024.jpg" />
+                        <img alt="new-ielts-test-pic" src="http://holaduhoc.edu.vn/wp-content/uploads/2022/01/3c0dfceb248deb1a6c7c161b4f912a56.jpg" />
                         <div className="new-ielts-test-box-title">IELTS Mock Test 04/2022</div>
                     </div>
                     <div className="new-ielts-test-box">
-                        <img alt="new-ielts-test-pic" src="http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-george-dolgikh-giftpunditscom-1326947-min_2540x1693-1536x1024.jpg" />
+                        <img alt="new-ielts-test-pic" src="http://holaduhoc.edu.vn/wp-content/uploads/2022/04/pexels-pixabay-355948-1536x934.jpg" />
                         <div className="new-ielts-test-box-title">IELTS Mock Test 04/2022</div>
                     </div>
                 </div>
