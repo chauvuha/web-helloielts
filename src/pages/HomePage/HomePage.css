@@ -355,6 +355,10 @@
     margin-bottom: 20px;
 }
 
+.new-ielts-test-box-title {
+    font-size: 18px;
+}
+
 .new-ielts-test-title,
 .new-ielts-test-box-title {
     color: var(--e-global-color-44c7a33);
