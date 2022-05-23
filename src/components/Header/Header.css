@@ -36,7 +36,6 @@
     justify-content: center;
 }
 
-
 .header .header-widget-wrap {
     display: flex;
 }
@@ -68,7 +67,6 @@
 }
 
 .header .header-element.header-element-button .header-button {
-    font-family: "Poppins", Sans-serif;
     font-weight: bold;
     fill: var(--e-global-color-ba6f0c4);
     color: var(--e-global-color-ba6f0c4);
@@ -89,7 +87,7 @@
 
 @media (max-width: 1023px) {
     .button .header-section {
-        padding: 10px 10px 10px 10px;
+        padding: 10px;
     }
 
     .header-container {
@@ -99,7 +97,7 @@
 
     .header .header-element.header-element-button .header-button {
         font-size: 12px;
-        padding: 10px 10px 10px 10px;
+        padding: 10px;
     }
 
     .button.header-section.header-section-boxed,
